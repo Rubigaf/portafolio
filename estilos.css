@@ -1,0 +1,91 @@
+body {
+    font-family:"Corinthia-Regular.ttf";
+    background-color: azure;
+    color: #80797b;
+}
+
+header {
+grid-area: header;
+font-family: "Alfa_Slab_One", serif;
+background-color: #3E4B51;
+color: #f3f3f3;
+padding: 30px; 
+text-align: center;
+}
+
+.container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 0px; 
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+main {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 3rf 3rf 3rf;
+    gap: inherit;
+}
+
+article {
+    padding: 10px;
+    border: 10px solid #6F737E;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 40px;
+    border-top-style: double;
+}
+
+p {
+    color: #45383a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: normal;
+}
+
+li {
+    color: #45383a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: normal;
+}
+
+aside {
+border-right: 1px solid #89A09A;
+grid-area: sidebar;
+background-color: #89A09A;
+padding: 20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #C1C0AE;
+    color: #45383a;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+}
+.foto_perfil{
+    width: 200px;
+    height: 200px;
+    background-image:url(Imagenes/image.png) ;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px #e0e0b6 (25, 47, 11);
+}
